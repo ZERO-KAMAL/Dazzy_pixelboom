@@ -1,0 +1,23 @@
+.category-image-card {
+  & {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+    transform: translateY(-3px);
+  }
+
+
+  .card-image .categoryImage {
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+
+  }
+  .downloadIcon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}

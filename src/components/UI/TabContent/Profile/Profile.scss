@@ -1,0 +1,30 @@
+.profileImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+}
+.profileGeneral {
+    // border: 1px solid #EBEBEB;
+    .profileGeneral-inner {
+        color: var(--dark);
+    }
+}
+.imageStatistic {
+    .imageStatistic-inner {
+        .imageStatistic-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: #f6f6f6;
+            border: 1px solid var(--bg-color);
+            border-radius: 8px;
+            padding: 8px;
+            color: var(--dark);
+            span:nth-child(2) {
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.TypePrompt_settings-wrapper {
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    @media screen and (min-width: 767px) {
+        padding: 1.5rem 4.5rem;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 0.75rem;
+    }
+}
+
+.subjectWizard_wrapper {
+    background-color: var(--white);
+    border-radius: 12px;
+    scroll-behavior: auto;
+    // overflow: hidden;
+    .subjectWizard {
+        background-color: var(--white);
+        padding: 1.5rem 2.5rem;
+        @media screen and (max-width: 600px) {
+            padding: 1rem;
+        }
+
+        .subjecWizard_slider {
+            border: 1.5px solid #ebebeb;
+            padding: 0.75rem;
+            width: 100%;
+            // overflow: hidden;
+            // z-index: 2;
+            .swiper {
+                // overflow: visible !important;
+                z-index: 1;
+            }
+            .swiper-button-next,
+            .swiper-button-prev {
+                padding: 10px;
+                color: var(--primary) !important;
+                fill: var(--primary) !important;
+                stroke: var(--primary) !important;
+                z-index: 10 !important;
+            }
+            .swiper-button-next:after,
+            .swiper-button-prev:after {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            .swiper-button-prev {
+                left: -7px;
+            }
+            .swiper-button-next {
+                right: -7px;
+            }
+        }
+    }
+    .sliderGrid-item {
+        position: relative !important;
+        .item-image {
+            border-radius: 6px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .item-check {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .item-title {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+        }
+    }
+
+    .container-dots {
+        display: flex;
+    }
+    .dot {
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+        background-color: var(--bg-color);
+        margin: 0 3px;
+    }
+    .dot.active {
+        background: var(--light);
+    }
+}

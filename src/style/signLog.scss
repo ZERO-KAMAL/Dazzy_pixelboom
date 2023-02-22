@@ -1,0 +1,43 @@
+.signLog {
+    background-color: var(--white);
+    height: 100%;
+    .signLog_container {
+        // height: 100vh;
+        @media screen and (min-width: 991px) {
+            overflow: hidden;
+        }
+        .header-wrapper {
+            padding: 2rem;
+            @media screen and (max-width: 991px) {
+                padding: 1rem;
+            }
+        }
+        .signLog_wrapper {
+            padding: 3rem 1rem;
+            .signLog_form {
+                .form-label {
+                    font-weight: 600;
+                }
+            }
+            @media screen and (min-width: 991px) {
+                padding: 3rem 8rem;
+                max-width: 1000px;
+            }
+        }
+
+        .signLog_link {
+            color: var(--primary) !important;
+        }
+
+        .rightImg {
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
+            .signLog_image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

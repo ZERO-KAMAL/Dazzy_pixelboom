@@ -1,0 +1,26 @@
+.layout {
+    .main__layout {
+        // padding: 30px;
+        border: 1px solid #ebebeb;
+        width: 100%;
+        // overflow: hidden !important;
+        @media screen and (max-width: 600px) {
+            margin-left: 70px;
+        }
+    }
+    .main__layout-wrapper {
+        // margin-top: 6rem;
+        .content {
+            border-radius: 8px;
+            padding: 30px;
+            background-color: var(--white);
+            margin: 30px;
+            height: 100%;
+
+            @media screen and (max-width: 600px) {
+                padding: 1rem;
+                margin: 0.75rem;
+            }
+        }
+    }
+}

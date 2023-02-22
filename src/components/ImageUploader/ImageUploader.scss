@@ -1,0 +1,64 @@
+// upload file background
+.upload-file-background {
+    background: var(--bg-color);
+    border: 2px dashed var(--secondary);
+    border-radius: 12px;
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        margin-bottom: 5px;
+    }
+
+    // input file
+    .inputfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+
+
+    .inputfile:focus+label {
+        outline: 1px dotted var(--black);
+        outline:  auto 5px;
+    }
+
+    //  input file label
+    .inputfile+label * {
+        pointer-events: none;
+
+    }
+
+    // input label
+    .input-label {
+        border: none !important;
+        background: none;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.01em;
+        color: var(--primary);
+        text-decoration: underline;
+        outline: none;
+        cursor: pointer;
+        outline: none !important;
+    }
+
+    // upload file wrapper
+    .upload-file-wrapper {
+        display: flex;
+        gap: 4px;
+    }
+
+   
+
+}

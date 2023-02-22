@@ -1,0 +1,108 @@
+.editButton {
+  background: none;
+  border: 1px solid transparent;
+}
+
+.btn {
+  font-weight: 400;
+  opacity: 0.8;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+  background-color: none !important;
+  border-radius: 6px;
+  border: none;
+  &:hover {
+    color: var(--white);
+    opacity: 1;
+  }
+}
+
+.btn-wizard {
+  letter-spacing: -0.01em;
+  line-height: 14px;
+  font-size: 14px;
+  padding: 8px 1rem;
+  background: var(--primary) !important;
+  color: var(--white !important);
+  &:hover {
+    color: var(--white);
+  }
+}
+.btn-primary {
+  background: var(--primary) !important;
+  padding: 10px 2.5rem;
+  &:hover {
+    color: var(--white);
+  }
+}
+
+.btn-generate {
+  padding: 10px 2.5rem;
+  margin-top: 10px;
+  background: var(--primary);
+  border-radius: 6px;
+  color: var(--white);
+  border: none;
+}
+
+.btn-goback {
+  background: #f6f6f6 !important;
+  color: var(--dark) !important;
+  padding: 10px 2.5rem;
+  opacity: 1 !important;
+  border: 1px solid transparent !important;
+  &:focus {
+    border: 1px solid var(--primary) !important;
+  }
+}
+
+.btn-cancel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  width: 109px;
+  height: 32px;
+  background: var(--bg-color) !important;
+  border-radius: 6px;
+  border: none;
+  color: var(--black);
+  cursor: pointer;
+}
+.btn-viewResult {
+  background-color: var(--white);
+  border: none;
+}
+.close-btn {
+  border: none;
+  font-size: 1.2rem;
+}
+.close_popUp-btn,
+.btn-zoomUp,
+.btn-zoomDown {
+  border: none;
+  background-color: var(--white) !important;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: var(--light) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.close_popUp-btn {
+  background-color: var(--dark) !important;
+  color: var(--white) !important;
+}
+
+.btn-delete {
+  font-weight: 400;
+  opacity: 0.8;
+  color: red;
+  background: none !important;
+  border: none;
+  font-size: 1rem;
+}

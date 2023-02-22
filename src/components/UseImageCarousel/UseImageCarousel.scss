@@ -1,0 +1,57 @@
+.carousel-warpper {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+
+
+    .next {
+        position: absolute;
+        right: -2px;
+        margin: 0;
+    }
+
+    .previous {
+        position: absolute;
+        left: -2px;
+        margin: 0;
+    }
+
+}
+
+.carousel-card-img {
+    width: 80px;
+    display: block;
+    position: relative;
+
+}
+
+.carousel-card-close-icon {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    border-radius: 20px;
+    border: 1px solid #BFBFBF;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.card-visibility5 {
+    @media screen and (max-width: 767px) {
+        visibility: hidden;
+    }
+
+}
+
+.card-visibility4 {
+    @media screen and (max-width: 600px) {
+        visibility: hidden;
+    }
+}

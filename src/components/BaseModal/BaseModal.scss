@@ -1,0 +1,10 @@
+.baseModal {
+  .modal-dialog {
+    margin: auto;
+    width: 80%;
+    max-width: 100% !important;
+    @media screen and (max-width: 991px) {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.generate-image-heading-wrapper {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .generate_image {
+        width: 100%;
+        object-fit: contain;
+    }
+}

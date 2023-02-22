@@ -1,0 +1,103 @@
+/* Sidebar */
+.sidebar {
+    background-color: var(--white);
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    overflow: visible;
+    @media screen and (min-width: 600px) {
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+    .sidebar-menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding: 0 0.875rem;
+        margin-top: 1.5rem;
+        .sidebar-menu-item {
+            a {
+                padding: 10px;
+                color: var(--light);
+                text-decoration: none;
+                font-size: 14px;
+                display: block;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: -0.01em;
+                display: flex;
+                align-items: center;
+                border-radius: 4px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #f6f6f6;
+                    color: black;
+                }
+            }
+            a.active {
+                // border-left: 2px solid var(--light);
+                border-radius: 0px !important;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 25%;
+                    left: 0;
+                    width: 3px;
+                    height: 21px;
+                    background-color: var(--primary);
+                    border-radius: 10px;
+                }
+            }
+        }
+        @media screen and (max-width: 600px) {
+            padding: 0 0.75rem;
+        }
+    }
+
+    ///
+    .sidebar__topBar {
+        border-bottom: 1px solid var(--border-color);
+        padding: 20px 20px 35px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        .sidebarToogle {
+            cursor: pointer;
+            i {
+                border: 1.5px solid var(--light) !important;
+                font-size: 1.2rem;
+                background: var(--border-color);
+                border-radius: 50%;
+                color: var(--light);
+            }
+        }
+        .siderbarToogleLeft {
+            position: absolute;
+            bottom: 23px;
+            right: -10px;
+        }
+        .brand {
+            .brand_logo {
+                width: 37px;
+                height: 37px;
+            }
+            .brand_name {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+                margin-bottom: 0;
+                margin-left: 8px;
+            }
+        }
+    }
+    .active {
+        background-color: var(--bg-color-light);
+    }
+}

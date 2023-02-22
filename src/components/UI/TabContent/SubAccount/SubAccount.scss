@@ -1,0 +1,19 @@
+.subAccounts {
+    .tabs {
+        border: 1px solid var(--border-color);
+        width: fit-content;
+        border-radius: 6px;
+        .tab-item.active {
+            background-color: var(--bg-color-light);
+            border: none;
+        }
+        .tab-item {
+            padding: 1rem;
+            margin-left: 0px !important;
+            border: none;
+        }
+    }
+    .tab-content_wrapper {
+        margin: 2rem 0;
+    }
+}
